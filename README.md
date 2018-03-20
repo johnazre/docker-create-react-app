@@ -6,7 +6,7 @@ This is just a plainly generated `create-react-app` template with a `Dockerfile`
 
 ## Requirements
 
-* This was built using Docker version `17.12.0-ce` (the current version as of the creating of this repo), so that would be the safest bet, but it may be backwards compatible to a degree. I never tested it.
+* This was built using Docker version `17.12.0-ce` (the current Docker version as of the creating of this repo), so that would be the safest bet, but it may be backwards compatible to a degree. I never tested it.
 
 
 ## Getting Started
