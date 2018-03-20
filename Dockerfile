@@ -6,7 +6,7 @@
 # docker ps (for the container id)
 # docker container stop <container-id>
 
-FROM node:9.8
+FROM node:9
 
 ADD yarn.lock /yarn.lock
 ADD package.json /package.json
