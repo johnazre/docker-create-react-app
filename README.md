@@ -6,12 +6,20 @@ This is just a plainly generated `create-react-app` template with a `Dockerfile`
 
 ## Requirements
 
-* This was built using Docker version `17.12.0-ce`, so that would be the safest bet, but it may be backwards compatible to a degree. I never tested it.
+* This was built using Docker version `17.12.0-ce` (the current version as of the creating of this repo), so that would be the safest bet, but it may be backwards compatible to a degree. I never tested it.
 
 
 ## Getting Started
 
-```
+```bash
 git clone https://github.com/johnazre/docker-create-react-app.git
+docker build . -t react:app # react:app can be anything, i.e. blah:latest. Just make sure you change it everywhere else, as well.
 
+# To only run the container without updating docker container
+docker container run -it -p 3000:3000 react:app
+
+# OR
+
+# To run the container with updating the docker container. Note that you have to refresh your browser to see changes.
+docker container run -it -p 3000:3000 -p 35729:35729 -v $(pwd):/app react:app
 ```
